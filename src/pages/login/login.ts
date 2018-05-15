@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController, ToastController } from 'ionic-angular';
 import { AuthService } from '../../services/auth-service';
 import { RegisterPage } from '../register/register';
-import {HomePage} from "../home/home";
 import { Storage } from "@ionic/storage";
+import {TabsPage} from "../tabs/tabs";
 
 @Component({
     selector: 'page-login',
@@ -63,7 +63,7 @@ export class LoginPage {
             this.storage.set('username', this.data.username);
             //console.log(this.storage.get('username'));
             this.addAdvise();
-            this.navCtrl.setRoot(HomePage);
+            this.navCtrl.setRoot(TabsPage);
         }, (err) => {
             this.loading.dismiss();
             this.presentToast(err);

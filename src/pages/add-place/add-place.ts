@@ -13,6 +13,7 @@ import { Location } from "../../models/location";
 import { PlacesService } from "../../services/places";
 import { Posts } from "../../services/post-service";
 import { Storage } from "@ionic/storage";
+import {TabsPage} from "../tabs/tabs";
 //import {HomePage} from "../home/home";
 //import {normalizeURL} from 'ionic-angular';
 
@@ -142,7 +143,8 @@ export class AddPlacePage {
             duration: 3500
           });
           toast.present();
-          this.navCtrl.pop();
+          //this.navCtrl.popToRoot();
+      this.navCtrl.setRoot(TabsPage);
 
   }
 goToHomePage()

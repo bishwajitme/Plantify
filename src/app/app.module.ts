@@ -35,6 +35,7 @@ import {PasubmissionPage} from "../pages/pasubmission/pasubmission";
 import {ChallengesPage} from "../pages/challenges/challenges";
 import {AllActivityPage} from "../pages/all-activity/all-activity";
 import {StatsPage} from "../pages/stats/stats";
+import {TabsPage} from "../pages/tabs/tabs";
 @NgModule({
   declarations: [
     MyApp,
@@ -53,7 +54,8 @@ import {StatsPage} from "../pages/stats/stats";
       PasubmissionPage,
       ChallengesPage,
       AllActivityPage,
-      StatsPage
+      StatsPage,
+      TabsPage
   ],
   imports: [
     BrowserModule,
@@ -81,7 +83,8 @@ import {StatsPage} from "../pages/stats/stats";
       PasubmissionPage,
       ChallengesPage,
       AllActivityPage,
-      StatsPage
+      StatsPage,
+      TabsPage
   ],
   providers: [
       SocialSharing,
