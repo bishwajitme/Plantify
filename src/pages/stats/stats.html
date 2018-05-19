@@ -23,8 +23,30 @@
        Recent Activity
       </ion-card-title>
       <div class="discription">{{recent_activity['activitytype']}}: {{recent_activity['distance']}}KM</div>
-      <div class="discription">FootPrint Challenges: 0</div>
+      <div class="discription">FootPrint Challenges: {{number_challenges}}</div>
+      <div class="discription">Your Total Score: {{totalScore}}</div>
     </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-title text-center>Top five Users</ion-card-title>
+    <ion-grid>
+      <ion-row class="header_rwo">
+        <ion-col>Username</ion-col>
+        <ion-col>Score</ion-col>
+        <ion-col>Position</ion-col></ion-row>
+      <ion-row *ngFor="let i of total_parti">
+        <ion-col>
+          {{ perticipants[i]['_id'] }}
+      </ion-col>
+        <ion-col>
+          {{ perticipants[i]['total'] }}
+        </ion-col>
+        <ion-col>
+          {{ i+1 }}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
 
 </ion-content>

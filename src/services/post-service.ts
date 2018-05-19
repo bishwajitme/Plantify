@@ -11,12 +11,14 @@ export class Posts {
   catData: any;
   newCatData:any;
     scores:any;
+    parOrder:any;
 
   constructor(public http: Http, private transfer: FileTransfer) {
     this.data = null;
     this.singledata= null;
     this.catData = null;
       this.scores= null;
+      this.parOrder = null;
   }
  
   getposts(){
@@ -27,7 +29,7 @@ export class Posts {
  
     return new Promise(resolve => {
  
-      this.http.get('https://trablog.herokuapp.com/api/posts')
+      this.http.get('https://plantify.herokuapp.com/api/posts')
         .map(res => res.json())
         .subscribe(data => {
           this.data = data;
@@ -45,7 +47,7 @@ export class Posts {
  
     return new Promise(resolve => {
  
-      this.http.get('https://trablog.herokuapp.com/posts/api/show/'+id)
+      this.http.get('https://plantify.herokuapp.com/posts/api/show/'+id)
         .map(res => res.json())
         .subscribe(singledata => {
           this.singledata = singledata;
@@ -63,7 +65,7 @@ export class Posts {
           console.log('username: ' + username);
         return new Promise(resolve => {
 
-            this.http.get('http://localhost:3000/posts/api/score/'+ username)
+            this.http.get('https://plantify.herokuapp.com/posts/api/score/'+ username)
                 .map(res => res.json())
                 .subscribe(scores => {
                     this.scores = scores;
@@ -74,6 +76,41 @@ export class Posts {
     }
 
 
+    getChaCount(username){
+        this.scores = null;
+        if (this.scores) {
+            return Promise.resolve(this.scores);
+        }
+        console.log('username: ' + username);
+        return new Promise(resolve => {
+
+            this.http.get('https://plantify.herokuapp.com/posts/api/chacount/'+ username)
+                .map(res => res.json())
+                .subscribe(scores => {
+                    this.scores = scores;
+                    resolve(this.scores);
+                });
+        });
+
+    }
+
+    getTopFivet(){
+        this.parOrder = null;
+        if (this.parOrder) {
+            return Promise.resolve(this.parOrder);
+        }
+
+        return new Promise(resolve => {
+
+            this.http.get('https://plantify.herokuapp.com/posts/api/scoresort/')
+                .map(res => res.json())
+                .subscribe(scores => {
+                    this.parOrder = scores;
+                    resolve(this.parOrder);
+                });
+        });
+
+    }
 
 
 
@@ -85,7 +122,7 @@ export class Posts {
 
         return new Promise(resolve => {
 
-            this.http.get('https://trablhog.herokuapp.com/categories/api/categories')
+            this.http.get('https://plantify.herokuapp.com/categories/api/categories')
                 .map(res => res.json())
                 .subscribe(data => {
                     this.catData = data;
@@ -102,7 +139,7 @@ export class Posts {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
    console.log(newComment);
-    this.http.post('https://trablog.herokuapp.com/posts/api/addcomment', JSON.stringify(newComment), {headers: headers})
+    this.http.post('https://plantify.herokuapp.com/posts/api/addcomment', JSON.stringify(newComment), {headers: headers})
       .subscribe(res => {
         console.log(res.json());
       });
@@ -114,7 +151,7 @@ export class Posts {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         console.log(newContact);
-        this.http.post('https://trablog.herokuapp.com/users/contact', JSON.stringify(newContact), {headers: headers})
+        this.http.post('https://plantify.herokuapp.com/users/contact', JSON.stringify(newContact), {headers: headers})
             .subscribe(res => {
                 console.log(res.json());
             });
@@ -127,7 +164,7 @@ export class Posts {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         console.log(newData);
-        this.http.post('http://localhost:3000/posts/api/addpc', JSON.stringify(newData), {headers: headers})
+        this.http.post('https://plantify.herokuapp.com/posts/api/addpc', JSON.stringify(newData), {headers: headers})
             .subscribe(res => {
                 console.log(res.json());
             });
@@ -138,7 +175,7 @@ export class Posts {
     uploadImage(img, newPost) {
 
         // Destination URL
-        let url = 'http://localhost:3000/posts/api/add';
+        let url = 'https://plantify.herokuapp.com/posts/api/add';
 
         // File for Upload
         var targetPath = img;
@@ -165,7 +202,7 @@ export class Posts {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
    console.log(newPost);
-    this.http.post('http://localhost:3000/posts/api/addscore', JSON.stringify(newPost), {headers: headers})
+    this.http.post('https://plantify.herokuapp.com/posts/api/addscore', JSON.stringify(newPost), {headers: headers})
       .subscribe(res => {
         console.log(res.json());
       });
@@ -177,7 +214,7 @@ export class Posts {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         console.log(newCat);
-        this.http.post('https://trablog.herokuapp.com/categories/api/add', JSON.stringify(newCat), {headers: headers})
+        this.http.post('https://plantify.herokuapp.com/categories/api/add', JSON.stringify(newCat), {headers: headers})
             .subscribe(res => {
                 console.log(res.json());
 
@@ -186,7 +223,7 @@ export class Posts {
  
   deletePost(id){
  
-    this.http.delete('https://trablog.herokuapp.com/posts/api/delete/' + id).subscribe((res) => {
+    this.http.delete('https://plantify.herokuapp.com/posts/api/delete/' + id).subscribe((res) => {
       console.log(res.json());
     });
       return 'deleted';

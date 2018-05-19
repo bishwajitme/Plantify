@@ -5,11 +5,6 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     </ion-buttons>
-    <ion-buttons end *ngIf="this.isLoggedIn">
-      <button ion-button icon-only [navPush]="addPlacePage">
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-buttons>
     <ion-title>
       Plantify
     </ion-title>
@@ -21,7 +16,7 @@
 
     <ion-card-content text-center>
       <div class="advice_home" [innerHTML]="this.advices" ></div>
-        <div style="position: relative; height: 250px; ">
+        <div style="position: relative; height: 250px; width: 100% ">
 
       <div class="tree">
         <div class="trunk" [style.height]="this.tree_height">
@@ -38,5 +33,37 @@
         </div>
     </ion-card-content>
   </ion-card>
+  <h3 class="tocha">Today's Challenges</h3>
+
+
+  <h5 class="discrip">Every day you need to walk at least 30 minutes and take a carbon
+    footprint challenge. You can take extra challenges which will boost your point!
+  </h5>
+
+  <a class="challeng_today" (click)="onGoToSubmit()" *ngIf="this.isNotSubmittedToday">
+    <ion-card>
+      <img src="../assets/images/walking.png">
+      <ion-card-content text-center>
+        <ion-card-title>
+          30 minutes walking
+        </ion-card-title>
+        <!--div class="discription" >Test</div>-->
+
+      </ion-card-content>
+
+    </ion-card></a>
+  <a (click)="onGoToChallenge()" class="challeng_today">
+    <ion-card>
+      <img src="../assets/images/carbon-footprint.jpg">
+      <ion-card-content text-center>
+        <ion-card-title>
+          Take one Carbon Foorprint Challenges
+        </ion-card-title>
+        <!--div class="discription" >Test</div>-->
+
+      </ion-card-content>
+    </ion-card>
+
+  </a>
 
 </ion-content>

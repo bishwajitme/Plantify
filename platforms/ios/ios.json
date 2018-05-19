@@ -88,13 +88,13 @@
           "NSPhotoLibraryUsageDescription": [
             {
               "xml": "<string>photo library usage description</string>",
-              "count": 37
+              "count": 39
             }
           ],
           "NSCameraUsageDescription": [
             {
               "xml": "<string>camera usage description</string>",
-              "count": 37
+              "count": 39
             }
           ],
           "NSPhotoLibraryAddUsageDescription": [

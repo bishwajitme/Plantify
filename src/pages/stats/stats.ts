@@ -21,6 +21,11 @@ export class StatsPage implements OnInit {
     isLoggedIn: boolean = false;
     isNotLoggedIn: boolean = true;
     recent_activity = [];
+    username = '';
+    number_challenges = 0;
+    totalScore = 0;
+    perticipants = [];
+    total_parti = [];
 
     constructor(private modalCtrl: ModalController,
                 private navCtrl: NavController,
@@ -50,6 +55,37 @@ export class StatsPage implements OnInit {
              this.recent_activity = val;
 
             }
+        });
+
+        this.storage.get('username').then((val) => {
+            if(val!="" && val!= null){
+                this.username = val;
+                this.postService.getScore(this.username).then((data) => {
+                    if (typeof data !== 'undefined' && data.length > 0) {
+                        this.number_challenges =  data[0]['count']-1;
+                        this.totalScore = data[0]['total'];
+                    }
+                    else{
+                        this.number_challenges = 0;
+                        this.totalScore = 0;
+                    }
+
+
+                });
+            }
+        });
+
+        this.postService.getTopFivet().then((data) => {
+            if (typeof data !== 'undefined' && data.length > 0) {
+               console.log('data '+ JSON.stringify(data));
+                this.total_parti = Array(data.length).fill(1).map((x,i)=>i);
+                this.perticipants = data;
+            }
+            else{
+                this.number_challenges = 0;
+            }
+
+
         });
 
 

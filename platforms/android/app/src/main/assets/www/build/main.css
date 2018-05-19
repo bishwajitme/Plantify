@@ -26267,12 +26267,12 @@ page-home .tree .trunk {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 50px;
   height: 0;
   background: brown;
   transition: height 4s;
   height: 5vh;
-  max-height: 45vh;
+  max-height: 30vh;
 }
 
 page-home .tree .trunk:before, page-home .tree .trunk:after {
@@ -28078,6 +28078,40 @@ page-home .tree .trunk .leaf:nth-child(even) {
   transform-origin: 50% 0%;
   -webkit-transform: translateX(-50%) rotate(10deg) scale(0);
   transform: translateX(-50%) rotate(10deg) scale(0);
+}
+
+.challeng_today a:hover .card {
+  background: rgba(0, 128, 0, 0.5) !important;
+}
+
+.challeng_today a:hover ion-card img {
+  opacity: .7;
+}
+
+h3.tocha, h5.discrip {
+  text-align: center;
+}
+
+h5.discrip {
+  padding-borrom: 20px;
+}
+
+.challeng_today ion-card img {
+  display: block;
+  width: auto;
+  max-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.facts .card-title {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.facts {
+  background: rgba(166, 200, 200, 0.7);
 }
 
 page-login h2 {

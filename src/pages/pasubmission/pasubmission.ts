@@ -94,7 +94,7 @@ export class PasubmissionPage {
             duration: 1000
         });
         toast.present();
-
+       this.goToHomePage();
     }
     goToHomePage()
     {

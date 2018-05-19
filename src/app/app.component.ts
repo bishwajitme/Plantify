@@ -2,14 +2,14 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { HomePage } from '../pages/home/home';
-import {LoginPage} from "../pages/login/login";
+//import { HomePage } from '../pages/home/home';
+//import {LoginPage} from "../pages/login/login";
 import {LogoutPage} from "../pages/logout/logout";
 //import {CategoryPage} from "../pages/category/category";
-import {ContactPage} from "../pages/contact/contact";
-import {ChallengePage} from "../pages/challenge/challenge";
+//import {ContactPage} from "../pages/contact/contact";
+//import {ChallengePage} from "../pages/challenge/challenge";
 import {AllActivityPage} from "../pages/all-activity/all-activity";
-import {StatsPage} from "../pages/stats/stats";
+//import {StatsPage} from "../pages/stats/stats";
 import {TabsPage} from "../pages/tabs/tabs";
 
 @Component({
@@ -27,13 +27,8 @@ export class MyApp {
 
         // used for an example of ngFor and navigation
         this.pages = [
-            { title: 'Home', component: HomePage },
-            { title: 'Challenge', component: ChallengePage },
             { title: 'All Activities', component: AllActivityPage },
-            { title: 'Stats', component: StatsPage },
-            { title: 'Login', component: LoginPage },
-            { title: 'Logout', component: LogoutPage },
-            { title: 'Contact Us', component: ContactPage },
+            { title: 'Logout', component: LogoutPage }
         ];
 
     }

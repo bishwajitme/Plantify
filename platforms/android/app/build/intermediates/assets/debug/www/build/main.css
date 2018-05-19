@@ -26160,12 +26160,82 @@ page-category h2 {
   text-align: center;
 }
 
+page-challenge a:hover .card {
+  background: rgba(0, 128, 0, 0.5) !important;
+}
+
+page-challenge a:hover ion-card img {
+  opacity: .7;
+}
+
+page-challenge h3, page-challenge h5 {
+  text-align: center;
+}
+
+page-challenge h5 {
+  padding-borrom: 20px;
+}
+
+page-challenge ion-card img {
+  display: block;
+  width: auto;
+  max-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.facts .card-title {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.facts {
+  background: rgba(166, 200, 200, 0.7);
+}
+
+page-challenges a {
+  color: #387ef5;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin: 10px 0;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+page-challenges img {
+  float: left;
+  display: inline-block;
+  max-height: 60px;
+  margin-right: 10px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+page-challenges a span {
+  padding: 10px 0;
+}
+
 page-contact .bg {
   background: linear-gradient(to bottom, #cfecf0 0%, #ffffff 100%);
 }
 
+page-home .advice_home {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  color: green;
+}
+
 page-home .bg {
-  background: url("../assets/images/1_6.jpg") no-repeat center center fixed;
+  /*background: url('../assets/images/1_6.jpg') no-repeat center center fixed;*/
   background-size: cover;
 }
 
@@ -26181,6 +26251,1869 @@ page-home .title {
   color: #387EF5;
 }
 
+page-home .tree {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  mix-blend-mode: darken;
+}
+
+page-home .tree, page-home .tree * {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+page-home .tree .trunk {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 0;
+  background: brown;
+  transition: height 4s;
+  height: 5vh;
+  max-height: 30vh;
+}
+
+page-home .tree .trunk:before, page-home .tree .trunk:after {
+  content: '';
+  background: white;
+  height: 200%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 100%;
+}
+
+page-home .tree .trunk:before {
+  left: 55%;
+}
+
+page-home .tree .trunk:after {
+  right: 55%;
+}
+
+page-home .tree .trunk .branch {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  background: brown;
+  mix-blend-mode: darken;
+  height: 0;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+page-home .tree .trunk .branch:nth-child(odd) {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: translateX(-50%) rotate(-20deg) scale(0);
+  transform: translateX(-50%) rotate(-20deg) scale(0);
+}
+
+page-home .tree .trunk .branch:nth-child(even) {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: translateX(-50%) rotate(20deg) scale(0);
+  transform: translateX(-50%) rotate(20deg) scale(0);
+}
+
+page-home .tree .trunk .branch:nth-child(1) {
+  bottom: 100%;
+  width: 0px;
+  transition-delay: 10s;
+  height: 0%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) {
+  bottom: 90%;
+  width: 4px;
+  transition-delay: 9s;
+  height: 3%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 4.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(2) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) {
+  bottom: 80%;
+  width: 8px;
+  transition-delay: 8s;
+  height: 6%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 4s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 8s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 12s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(3) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) {
+  bottom: 70%;
+  width: 12px;
+  transition-delay: 7s;
+  height: 9%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 3.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 7s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 10.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 14s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 17.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(4) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) {
+  bottom: 60%;
+  width: 16px;
+  transition-delay: 6s;
+  height: 12%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 6s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 9s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 12s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 15s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(7) {
+  bottom: 59%;
+  transition-delay: 18s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(8) {
+  bottom: 55%;
+  transition-delay: 21s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(5) .leaf:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) {
+  bottom: 50%;
+  width: 20px;
+  transition-delay: 5s;
+  height: 15%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 2.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 7.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 10s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 12.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(7) {
+  bottom: 59%;
+  transition-delay: 15s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(8) {
+  bottom: 55%;
+  transition-delay: 17.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(9) {
+  bottom: 51%;
+  transition-delay: 20s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(9):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(9):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(10) {
+  bottom: 47%;
+  transition-delay: 22.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(10):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(6) .leaf:nth-child(10):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) {
+  bottom: 40%;
+  width: 24px;
+  transition-delay: 4s;
+  height: 18%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 2s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 4s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 6s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 8s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 10s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(7) {
+  bottom: 59%;
+  transition-delay: 12s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(8) {
+  bottom: 55%;
+  transition-delay: 14s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(9) {
+  bottom: 51%;
+  transition-delay: 16s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(9):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(9):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(10) {
+  bottom: 47%;
+  transition-delay: 18s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(10):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(10):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(11) {
+  bottom: 43%;
+  transition-delay: 20s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(11):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(11):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(12) {
+  bottom: 39%;
+  transition-delay: 22s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(12):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(7) .leaf:nth-child(12):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) {
+  bottom: 30%;
+  width: 28px;
+  transition-delay: 3s;
+  height: 21%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 1.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 4.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 6s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 7.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(7) {
+  bottom: 59%;
+  transition-delay: 9s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(8) {
+  bottom: 55%;
+  transition-delay: 10.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(9) {
+  bottom: 51%;
+  transition-delay: 12s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(9):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(9):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(10) {
+  bottom: 47%;
+  transition-delay: 13.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(10):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(10):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(11) {
+  bottom: 43%;
+  transition-delay: 15s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(11):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(11):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(12) {
+  bottom: 39%;
+  transition-delay: 16.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(12):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(12):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(13) {
+  bottom: 35%;
+  transition-delay: 18s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(13):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(13):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(14) {
+  bottom: 31%;
+  transition-delay: 19.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(14):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(8) .leaf:nth-child(14):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) {
+  bottom: 20%;
+  width: 32px;
+  transition-delay: 2s;
+  height: 24%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(9):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 1s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 2s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 4s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(7) {
+  bottom: 59%;
+  transition-delay: 6s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(8) {
+  bottom: 55%;
+  transition-delay: 7s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(9) {
+  bottom: 51%;
+  transition-delay: 8s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(9):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(9):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(10) {
+  bottom: 47%;
+  transition-delay: 9s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(10):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(10):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(11) {
+  bottom: 43%;
+  transition-delay: 10s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(11):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(11):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(12) {
+  bottom: 39%;
+  transition-delay: 11s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(12):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(12):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(13) {
+  bottom: 35%;
+  transition-delay: 12s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(13):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(13):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(14) {
+  bottom: 31%;
+  transition-delay: 13s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(14):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(14):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(15) {
+  bottom: 27%;
+  transition-delay: 14s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(15):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(15):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(16) {
+  bottom: 23%;
+  transition-delay: 15s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(16):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(9) .leaf:nth-child(16):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) {
+  bottom: 10%;
+  width: 36px;
+  transition-delay: 1s;
+  height: 27%;
+  min-height: 10%;
+}
+
+page-home .tree .trunk .branch:nth-child(10):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-70deg) scale(1);
+  transform: translateX(-50%) rotate(-70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(1) {
+  bottom: 83%;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(1):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(1):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(2) {
+  bottom: 79%;
+  transition-delay: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(2):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(2):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(3) {
+  bottom: 75%;
+  transition-delay: 1s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(3):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(3):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(4) {
+  bottom: 71%;
+  transition-delay: 1.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(4):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(4):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(5) {
+  bottom: 67%;
+  transition-delay: 2s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(5):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(5):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(6) {
+  bottom: 63%;
+  transition-delay: 2.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(6):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(6):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(7) {
+  bottom: 59%;
+  transition-delay: 3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(7):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(7):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(8) {
+  bottom: 55%;
+  transition-delay: 3.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(8):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(8):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(9) {
+  bottom: 51%;
+  transition-delay: 4s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(9):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(9):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(10) {
+  bottom: 47%;
+  transition-delay: 4.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(10):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(10):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(11) {
+  bottom: 43%;
+  transition-delay: 5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(11):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(11):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(12) {
+  bottom: 39%;
+  transition-delay: 5.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(12):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(12):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(13) {
+  bottom: 35%;
+  transition-delay: 6s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(13):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(13):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(14) {
+  bottom: 31%;
+  transition-delay: 6.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(14):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(14):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(15) {
+  bottom: 27%;
+  transition-delay: 7s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(15):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(15):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(16) {
+  bottom: 23%;
+  transition-delay: 7.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(16):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(16):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(17) {
+  bottom: 19%;
+  transition-delay: 8s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(17):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(17):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(18) {
+  bottom: 15%;
+  transition-delay: 8.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(18):nth-child(odd) {
+  -webkit-transform: translateX(-50%) rotate(-170deg) scale(1);
+  transform: translateX(-50%) rotate(-170deg) scale(1);
+}
+
+page-home .tree .trunk .branch:nth-child(10) .leaf:nth-child(18):nth-child(even) {
+  -webkit-transform: translateX(-50%) rotate(70deg) scale(1);
+  transform: translateX(-50%) rotate(70deg) scale(1);
+}
+
+page-home .tree .trunk .branch:before, page-home .tree .trunk .branch:after {
+  content: '';
+  background: white;
+  height: 200%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  border-radius: 100%;
+  mix-blend-mode: luminosity;
+}
+
+page-home .tree .trunk .branch:before {
+  left: 55%;
+}
+
+page-home .tree .trunk .branch:after {
+  right: 55%;
+}
+
+page-home .tree .trunk .leaf {
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  background: green;
+  border-radius: 100% 0;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+page-home .tree .trunk .leaf:nth-child(odd) {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translateX(-50%) rotate(-10deg) scale(0);
+  transform: translateX(-50%) rotate(-10deg) scale(0);
+}
+
+page-home .tree .trunk .leaf:nth-child(even) {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translateX(-50%) rotate(10deg) scale(0);
+  transform: translateX(-50%) rotate(10deg) scale(0);
+}
+
+.challeng_today a:hover .card {
+  background: rgba(0, 128, 0, 0.5) !important;
+}
+
+.challeng_today a:hover ion-card img {
+  opacity: .7;
+}
+
+h3.tocha, h5.discrip {
+  text-align: center;
+}
+
+h5.discrip {
+  padding-borrom: 20px;
+}
+
+.challeng_today ion-card img {
+  display: block;
+  width: auto;
+  max-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.facts .card-title {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.facts {
+  background: rgba(166, 200, 200, 0.7);
+}
+
 page-login h2 {
   text-align: center;
 }
@@ -26194,6 +28127,14 @@ page-login form {
 
 page-login .bg {
   background: linear-gradient(to bottom, #cfecf0 0%, #ffffff 100%);
+}
+
+page-pasubmission sebm-google-map {
+  height: 250px;
+}
+
+page-pasubmission agm-map {
+  height: 250px;
 }
 
 page-place sebm-google-map {

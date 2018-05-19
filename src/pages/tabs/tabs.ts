@@ -6,7 +6,7 @@ import { Storage } from "@ionic/storage";
 import {LoginPage} from "../login/login";
 
 import { StatsPage } from '../stats/stats';
-import { ChallengePage } from '../challenge/challenge';
+import { ChallengesPage } from '../challenges/challenges';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -16,7 +16,7 @@ export class TabsPage implements OnInit {
     isLoggedIn: boolean = false;
     isNotLoggedIn: boolean = true;
     tab1Root = HomePage;
-    tab2Root = ChallengePage;
+    tab2Root = ChallengesPage;
     tab3Root = StatsPage;
 
     constructor(private modalCtrl: ModalController,

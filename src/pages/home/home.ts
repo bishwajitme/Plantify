@@ -9,6 +9,8 @@ import {LoginPage} from "../login/login";
 //import { PlacesService } from "../../services/post";
 import { Posts } from "../../services/post-service";
 import { ShowPage } from "../show/show";
+import {PasubmissionPage} from "../pasubmission/pasubmission";
+import {ChallengesPage} from "../challenges/challenges";
 
 @Component({
   selector: 'page-home',
@@ -112,6 +114,13 @@ export class HomePage implements OnInit {
 
 }
 
+    onGoToSubmit(){
+        this.navCtrl.push(PasubmissionPage);
+    }
+
+    onGoToChallenge(){
+        this.navCtrl.push(ChallengesPage);
+    }
 
   onOpenPost(id: number) {
     this.navCtrl.push(ShowPage, {id:id});
