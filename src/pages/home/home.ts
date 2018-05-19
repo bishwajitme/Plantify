@@ -31,6 +31,7 @@ export class HomePage implements OnInit {
     advices = '';
     username = '';
     totalscore = 1;
+    smallTree = ''
 
   constructor(private modalCtrl: ModalController,
             private navCtrl: NavController,
@@ -61,6 +62,9 @@ export class HomePage implements OnInit {
                   if (typeof data !== 'undefined' && data.length > 0) {
                       this.totalscore = data[0]['total'];
                       this.leaf = Math.floor( data[0]['count']);
+                      if(this.leaf  < 4){
+                          this.smallTree = 'Still Your Tree is too small. Continue your effort to make it bigger.'
+                      }
                   }
                   else{
                       this.leaf = 0;
